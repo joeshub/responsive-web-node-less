@@ -1,0 +1,31 @@
+// General Rules
+@import "../reset";
+@import "../colors";
+@import "../fonts";
+
+body{
+	font-size: 100%; //sets font size to 16px on most browsers
+	font-family: 'vigaa', arial, sans-serif;
+	padding: 5%;
+	a {
+		color: @link-color;
+		&:hover {
+			color: @link-hover;
+		}
+	}
+	ol {
+		li {
+			a {
+				
+			}
+			ul {
+				margin: 5px 0 20px 15px;
+				li {
+					a {
+						
+					}
+				}
+			}
+		}
+	}
+}
