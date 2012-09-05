@@ -1,0 +1,45 @@
+// General Rules
+@import "../reset";
+@import "../colors";
+
+// Mobile First Defaults
+@import	"../rules";
+@import "../base-flexible";
+
+
+@media only screen and ( min-width: 320px   ) {
+
+/*
+
+  Mobile portrait (320x480)
+    
+----------------------------------------- */
+	body {
+		color: @black;
+		font-family: arial, sans-serif;
+		font-weight: normal;
+		background-color: rgb(241, 242, 243);
+	}
+	
+	a {
+		text-decoration: none;
+		color: @link-color;
+		font-weight: 700;
+		&:hover, &:active {
+			color: @link-hover;
+		}
+	}
+	
+	
+	//Only Opera Mini Doesnt' Support @font-face
+	h1, h2, h3, .logo, nav, figcaption, #footer mark, #aside button {
+		font-family: 'vigaa', arial, sans-serif;
+	}
+	
+	
+	//Only Opera Mini Doesn't support border radius
+	a, button, input, hgroup, #header, article, aside > section {
+		border-radius: 5px;
+	}
+
+}

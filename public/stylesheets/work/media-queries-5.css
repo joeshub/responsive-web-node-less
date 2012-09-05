@@ -1,0 +1,643 @@
+/* 
+
+ CSS Reset http://meyerweb.com/eric/tools/css/reset/
+ 
+----------------------------------------- */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*
+
+  Website Colors
+  
+----------------------------------------- */
+/* 
+
+  Variables
+
+----------------------------------------- */
+/* 
+
+  Mixins
+  
+----------------------------------------- */
+/* width / base = result  (100% = 1 em ~= 16px ~= 14pt) */
+/* amount / base = result */
+/* amount / base = result */
+/* size / base = result */
+/* size / base = result */
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "\0020";
+  display: block;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
+.clearfix:after {
+  clear: both;
+}
+/*
+
+  Flexible Grid
+  Default Styles Mobile First
+
+----------------------------------------- */
+body {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body.mediumText {
+  font-size: 110%;
+}
+body.largeText {
+  font-size: 125%;
+}
+#content {
+  width: 92%;
+  margin: 0px auto 15px;
+}
+#aside {
+  width: 92%;
+  margin: 0px auto 25px;
+}
+#footer {
+  width: 100%;
+}
+#header {
+  height: 50px;
+  margin: 0 auto 15px;
+  overflow: hidden;
+  padding: 0 4% 0 3%;
+}
+#header hgroup {
+  position: relative;
+  float: left;
+  width: 85px;
+  height: 50px;
+}
+#header hgroup h1 {
+  padding: 8% 0% 0% 0%;
+  font-size: 2.125em;
+  letter-spacing: -1px;
+  text-shadow: 1px 0px 3px rgba(0, 0, 0, 0.24);
+}
+#header hgroup h3 {
+  display: none;
+}
+#header #top {
+  overflow: hidden;
+  max-height: 70px;
+}
+#header nav {
+  margin: 7px 0 0 7px;
+  float: left;
+}
+#header nav ul {
+  list-style: none;
+}
+#header nav ul li {
+  display: inline-block;
+}
+#header nav ul li a {
+  line-height: 35px;
+  display: inline-block;
+  padding: 0 6px 0 6px;
+  margin: 0 2px;
+  font-size: 0.9375em;
+  font-weight: 400;
+  text-transform: lowercase;
+}
+#header form {
+  float: right;
+}
+#header form input {
+  width: 90%;
+  height: 35px;
+  line-height: 35px;
+  padding: 0 0 0 15px;
+  font-size: 1em;
+  font-weight: 400;
+}
+#main {
+  margin: 0 auto;
+  zoom: 1;
+}
+#main:before,
+#main:after {
+  content: "\0020";
+  display: block;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
+#main:after {
+  clear: both;
+}
+#main #content article {
+  margin-bottom: 15px;
+}
+#main #content article header {
+  padding: 4.823151125401929% 3.215434083601286% 3.215434083601286% 3.215434083601286%;
+}
+#main #content article header h2 {
+  font-size: 1.5em;
+  margin-bottom: 12px;
+}
+#main #content article header h2 a {
+  font-size: 1em;
+  font-weight: 400;
+}
+#main #content article header span,
+#main #content article header a {
+  font-size: 0.875em;
+  padding: 0% 4.823151125401929% 0% 0%;
+}
+#main #content article figure a {
+  position: relative;
+  display: block;
+}
+#main #content article figure a img {
+  display: block;
+  margin: 0 auto;
+}
+#main #content article figure a figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 8%;
+  height: 14px;
+  padding: 1.5%;
+  color: #000000;
+  font-weight: 400;
+  font-size: 0.75em;
+}
+#main #content article p {
+  padding: 3.215434083601286% 3.215434083601286% 3.215434083601286% 3.215434083601286%;
+  font-size: 0.875em;
+  line-height: 21px;
+}
+#main #aside {
+  font-size: 0.875em;
+  line-height: 18px;
+}
+#main #aside section {
+  margin-bottom: 15px;
+  padding: 8.571428571428571% 5.714285714285714% 8.571428571428571% 5.714285714285714%;
+}
+#main #aside section button {
+  width: 47.4025974025974%;
+  max-width: 135px;
+  height: 40px;
+  margin-right: 1.7%;
+  font-size: 1em;
+}
+#main #aside section button:last-of-type {
+  margin-right: 0;
+}
+#main #aside section h3 {
+  margin: 30px 0 16px;
+  font-size: 1.2857142857142858em;
+}
+#main #aside section h3:first-child {
+  margin-top: 0;
+}
+#main #aside section ul.destinations {
+  overflow: hidden;
+}
+#main #aside section ul.destinations li {
+  clear: left;
+  margin-bottom: 30px;
+}
+#main #aside section ul.destinations li:last-child {
+  margin-bottom: 0;
+}
+#main #aside section ul.destinations li figure {
+  float: left;
+}
+#main #aside section ul.destinations li figure a img {
+  box-sizing: border-box;
+}
+#main #aside section ul.destinations li p {
+  margin-left: 150px;
+  font-size: 0.7857142857142857em;
+}
+#main #aside section ul.destinations li p a time {
+  display: block;
+  padding-top: 8px;
+}
+#main #aside section ul.twitter li {
+  clear: left;
+  margin-bottom: 20px;
+}
+#main #aside section ul.twitter li time {
+  display: block;
+}
+#footer {
+  zoom: 1;
+  box-sizing: border-box;
+  padding: 5% 3%;
+}
+#footer:before,
+#footer:after {
+  content: "\0020";
+  display: block;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
+#footer:after {
+  clear: both;
+}
+#footer mark {
+  font-size: 0.9375em;
+  letter-spacing: -1px;
+  line-height: 40px;
+  float: left;
+  display: none;
+}
+#footer nav {
+  margin: 0 auto;
+}
+#footer nav ul {
+  text-align: center;
+  list-style: none;
+}
+#footer nav ul li {
+  display: inline-block;
+}
+#footer nav ul li a {
+  line-height: 40px;
+  display: inline-block;
+  padding: 0 1px 0 1px;
+  margin-right: 2px;
+  font-size: 0.75em;
+}
+#footer nav ul li a.active {
+  padding-left: 15px;
+}
+@media only screen and (min-width: 20em) {
+  /*
+  
+    Web Fonts
+    
+  ----------------------------------------- */
+  @font-face {
+    font-family: 'vigaa';
+    src: url('/fonts/viga/viga-webfont.eot');
+    src: url('/fonts/viga/viga-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/viga/viga-webfont.woff') format('woff'), url('/fonts/viga/viga-webfont.ttf') format('truetype'), url('/fonts/viga/viga-webfont.svg#vigaregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+@media only screen and (min-width: 20em) {
+  /*
+  
+    Mobile portrait (320x480)
+      
+  ----------------------------------------- */
+  body {
+    color: #000000;
+    font-family: arial, sans-serif;
+    font-weight: normal;
+    background-color: #f1f2f3;
+  }
+  a {
+    text-decoration: none;
+    color: #969696;
+    font-weight: 700;
+  }
+  a:hover,
+  a:active {
+    color: #ed3d32;
+  }
+  h1,
+  h2,
+  h3,
+  .logo,
+  nav,
+  figcaption,
+  #footer mark,
+  #aside button {
+    font-family: 'vigaa', arial, sans-serif;
+  }
+  a,
+  button,
+  input,
+  hgroup,
+  #header,
+  article,
+  aside > section {
+    border-radius: 5px;
+  }
+  #header {
+    background-color: #ebebeb;
+    box-shadow: 2px 1px 1px #d8d8d8, 1px 0px 15px #d8d8d8;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  #header hgroup {
+    text-align: center;
+  }
+  #header hgroup h1 a {
+    color: #ed3d32;
+    font-weight: 700;
+  }
+  #header hgroup h3 {
+    color: #969696;
+  }
+  #header nav ul li a > span {
+    display: none;
+  }
+  #header nav ul li.home,
+  #header nav ul li.blog {
+    display: none;
+  }
+  #header nav ul li.active a {
+    color: #faddde;
+    border: solid 1px #ddd;
+    background: #d81b21;
+    background: -webkit-gradient(linear, left top, left bottom, from(#aa1317), to(#ed1c24));
+  }
+  #header nav ul li:not(.active) a {
+    color: #606060;
+    border: solid 1px #ddd;
+    background: #fff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ededed));
+  }
+  #header form {
+    display: none;
+  }
+  #header form input {
+    font-family: 'vigaa', arial, sans-serif;
+    border: 0;
+  }
+  #main #content article {
+    background-color: #ffffff;
+    border: 1px solid #c5c5c5;
+  }
+  #main #content article header {
+    color: #969696;
+  }
+  #main #content article header h2 {
+    color: #000000;
+  }
+  #main #content article header h2 a {
+    color: #000000;
+  }
+  #main #content article header h2 a:hover {
+    color: #ed3d32;
+  }
+  #main #content article figure a figcaption {
+    background-color: #dcdcdc;
+    opacity: 0.7;
+  }
+  #main #aside section {
+    background-color: #ffffff;
+    border: 1px solid #c5c5c5;
+  }
+  #main #aside section button {
+    background-color: #ed3d32;
+    background: -webkit-linear-gradient(bottom, #ed3d32 0%, #d01408 30%, #fc180a 100%);
+    color: #ebebeb;
+    cursor: pointer;
+    border: 0;
+  }
+  #main #aside section button:hover {
+    background: -webkit-linear-gradient(bottom, #7a0700 0%, #970900 30%, #b00a00 100%);
+    color: #ffffff;
+  }
+  #main #aside section.login {
+    text-align: center;
+  }
+  #main #aside section.login p {
+    color: #969696;
+  }
+  #main #aside section ul.destinations li figure a img {
+    border: 5px solid #c5c5c5;
+  }
+  #main #aside section ul.destinations li figure a:hover > img {
+    border-color: #ed3d32;
+  }
+  #main #aside section ul.destinations li p a {
+    font-weight: 400;
+  }
+  #main #aside section ul.twitter li a {
+    color: #000000;
+    font-weight: 400;
+  }
+  #main #aside section ul.twitter li a mark {
+    color: #ed3d32;
+    background-color: transparent;
+  }
+  #main #aside section ul.twitter li time {
+    color: #969696;
+  }
+  #footer {
+    zoom: 1;
+    background-color: #000000;
+  }
+  #footer:before,
+  #footer:after {
+    content: "\0020";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+  }
+  #footer:after {
+    clear: both;
+  }
+  #footer mark {
+    background-color: transparent;
+    color: #969696;
+    font-weight: 700;
+  }
+  #footer nav ul li a {
+    font-weight: 400;
+    text-transform: lowercase;
+  }
+  #footer nav ul li a.active {
+    background: url("/images/arrow.png") 0 50% no-repeat;
+  }
+  #footer nav ul li a:hover {
+    color: #ed3d32;
+  }
+}
+@media only screen and (min-width: 30em) {
+  /*
+  
+    Mobile landscape (480x320)
+    
+  ----------------------------------------- */
+  #header hgroup {
+    text-align: center;
+  }
+  #header hgroup h1 a {
+    color: #ed3d32;
+    font-weight: 700;
+  }
+  #header hgroup h3 {
+    color: #969696;
+  }
+  #header nav ul li a {
+    padding: 0 10px 0 10px;
+  }
+  #header form {
+    display: inherit;
+    margin: 8px 0 0 0;
+  }
+  #header form input {
+    width: 100px;
+  }
+}
+@media only screen and (min-width: 37.5em) {
+  /*
+  
+    Small tablet portrait (600x800)
+    
+  ----------------------------------------- */
+  #header form input {
+    width: 200px;
+  }
+  #main #content article figure a figcaption {
+    height: 18px;
+    font-size: 1em;
+  }
+  #main #aside section ul.destinations li p {
+    font-size: 1em;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /*
+  
+    Tablet portrait (768x1024)
+    
+  ----------------------------------------- */
+  #header form input {
+    width: 200px;
+  }
+}

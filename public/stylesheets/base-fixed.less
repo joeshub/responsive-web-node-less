@@ -1,0 +1,227 @@
+/*
+
+  Fixed Width
+  Default Styles Mobile First
+
+----------------------------------------- */
+
+#wrapper {
+	width: 1022px;
+	margin: 40px auto 50px;
+}
+
+#content {
+	width: 624px;
+}
+
+#aside {
+	width: 350px;
+}
+
+#footer {
+	min-width: 1022px;
+}
+
+#header {
+	height: 100px;
+	margin: 0 auto 50px;
+	overflow: hidden;
+	hgroup {
+		position: relative;
+		float: left;
+		width: 140px;
+		height: 140px;
+		top: -20px;
+		h1 {
+			padding: 30px 0 0;
+			a {
+				font-size: 48px;
+			}
+		}
+		h3 {
+			font-size: 14px;
+		}
+	}
+	nav {
+		margin: 30px 40px 0 30px;
+		float: left;
+		ul {
+			list-style:	none;
+			li {
+				display: inline-block;
+				a {
+					line-height: 40px;
+					display: inline-block;
+					padding: 0 5px 0 5px;
+					margin-right: 18px;
+					font-size: 18px;
+					text-transform: lowercase;
+					&.active {
+						padding-left: 25px;
+					}
+					&:hover {
+					}
+				}
+			}
+		}
+	}
+	form {
+		margin: 30px 40px 0 0;
+		float: right;
+		input {
+			width: 270px;
+			height: 40px;
+			padding: 0 15px;
+			font-size: 18px;
+		}
+	}
+}
+
+#main {
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#content {
+	float: left;
+	article {
+		margin-bottom: 50px;
+		header {
+			padding: 30px 20px 20px;
+			h2 {
+				font-size: 24px;
+				margin-bottom: 12px;
+			}
+			span, a {
+				font-size: 14px;
+				padding-right: 30px;
+			}
+		}
+		figure {
+			position: relative;
+			img {
+				display: block;
+			}
+			figcaption {
+				position: absolute; 
+				bottom:0;
+				right: 0;
+				height: 18px;
+				padding: 1.5%;
+			}
+		}
+		p {
+			padding: 20px;
+			font-size: 14px;
+			line-height: 21px;
+		}
+
+	}
+}
+
+#aside {
+	float: right;
+	font-size: 12px;
+	line-height: 18px;
+	section {
+		margin-bottom: 25px;
+		padding: 30px 20px;
+		button {
+			width: 146px;
+			height: 40px;
+			margin-right: 12px;
+			font-size: 14px;
+			&:last-of-type {
+				margin-right: 0;
+			}
+			&:hover {
+			}
+		}
+		h3 {
+			margin: 30px 0;
+			font-size: 18px;
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+		&.login {
+			p {
+			}
+		}
+		ul {
+			&.destinations {
+				li {
+					clear: left;
+					margin-bottom:70px;
+					figure {
+						float: left;
+						a {
+							img {
+								box-sizing: border-box;
+							}
+							&:hover > img {
+							}
+						}
+					}
+					p {
+						margin-left: 145px;
+						a {
+							time {
+								display: block;
+								padding-top: 8px;
+							}
+						}
+					}
+				}
+			}
+			&.twitter {
+				li {
+					clear: left;
+					margin-bottom:20px;
+					a {
+						mark {
+						}
+					}
+					time {
+						display: block;
+					}
+				}
+			}
+		}
+
+	}
+}
+
+#footer {
+	overflow: hidden;
+	box-sizing: border-box;
+	padding: 5%;
+	mark {
+		font-size: 36px;
+		letter-spacing: -1px;
+		float: left;
+		display: block;
+	}
+	nav {
+		margin: 0 40px 0;
+		float: left;
+		ul {
+			list-style:	none;
+			li {
+				display: inline-block;
+				a {
+					line-height: 40px;
+					display: inline-block;
+					padding: 0 5px 0 5px;
+					margin-right: 18px;
+					font-size: 12px;
+					&.active {
+						padding-left: 15px;
+					}
+					&:hover {
+					}
+				}
+			}
+		}
+	}
+}

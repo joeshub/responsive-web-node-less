@@ -1,0 +1,25 @@
+// General Rules
+@import "reset";
+@import "colors";
+
+// Original Fixed Width Layout
+//@import "base-fixed";
+
+// Mobile First Defaults
+@import	"rules";
+@import "base-flexible";
+@import "base-responsive-images";
+
+// Media Queries for Breakpoints
+@import url( "320.less"   ) only screen and ( min-width: 20em   ); // 320px  or 320/16px 
+@import url( "480.less"   ) only screen and ( min-width: 30em   ); // 480px
+@import url( "600.less"   ) only screen and ( min-width: 37.5em ); // 600px
+@import url( "768.less"   ) only screen and ( min-width: 48em   ); // 768px
+@import url( "800.less"   ) only screen and ( min-width: 50em   ); // 800px
+@import url( "1024.less"  ) only screen and ( min-width: 64em   ); // 1024px
+
+// Fonts
+@import url( "fonts.less" ) only screen and ( min-width: 20em   ); // 320px
+
+//Minor Breakpoints
+@media (min-width: 1024px) {}

@@ -1,0 +1,320 @@
+/* 
+
+ CSS Reset http://meyerweb.com/eric/tools/css/reset/
+ 
+----------------------------------------- */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*
+
+  Fixed Width
+  Default Styles Mobile First
+
+----------------------------------------- */
+#wrapper {
+  width: 1022px;
+  margin: 40px auto 50px;
+}
+#content {
+  width: 624px;
+}
+#aside {
+  width: 350px;
+}
+#footer {
+  min-width: 1022px;
+}
+#header {
+  height: 100px;
+  margin: 0 auto 50px;
+  overflow: hidden;
+}
+#header hgroup {
+  position: relative;
+  float: left;
+  width: 140px;
+  height: 140px;
+  top: -20px;
+}
+#header hgroup h1 {
+  padding: 30px 0 0;
+}
+#header hgroup h1 a {
+  font-size: 48px;
+}
+#header hgroup h3 {
+  font-size: 14px;
+}
+#header nav {
+  margin: 30px 40px 0 30px;
+  float: left;
+}
+#header nav ul {
+  list-style: none;
+}
+#header nav ul li {
+  display: inline-block;
+}
+#header nav ul li a {
+  line-height: 40px;
+  display: inline-block;
+  padding: 0 5px 0 5px;
+  margin-right: 18px;
+  font-size: 18px;
+  text-transform: lowercase;
+}
+#header nav ul li a.active {
+  padding-left: 25px;
+}
+#header form {
+  margin: 30px 40px 0 0;
+  float: right;
+}
+#header form input {
+  width: 270px;
+  height: 40px;
+  padding: 0 15px;
+  font-size: 18px;
+}
+#main {
+  margin: 0 auto;
+  overflow: hidden;
+}
+#content {
+  float: left;
+}
+#content article {
+  margin-bottom: 50px;
+}
+#content article header {
+  padding: 30px 20px 20px;
+}
+#content article header h2 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+#content article header span,
+#content article header a {
+  font-size: 14px;
+  padding-right: 30px;
+}
+#content article figure {
+  position: relative;
+}
+#content article figure img {
+  display: block;
+}
+#content article figure figcaption {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 18px;
+  padding: 1.5%;
+}
+#content article p {
+  padding: 20px;
+  font-size: 14px;
+  line-height: 21px;
+}
+#aside {
+  float: right;
+  font-size: 12px;
+  line-height: 18px;
+}
+#aside section {
+  margin-bottom: 25px;
+  padding: 30px 20px;
+}
+#aside section button {
+  width: 146px;
+  height: 40px;
+  margin-right: 12px;
+  font-size: 14px;
+}
+#aside section button:last-of-type {
+  margin-right: 0;
+}
+#aside section h3 {
+  margin: 30px 0;
+  font-size: 18px;
+}
+#aside section h3:first-child {
+  margin-top: 0;
+}
+#aside section ul.destinations li {
+  clear: left;
+  margin-bottom: 70px;
+}
+#aside section ul.destinations li figure {
+  float: left;
+}
+#aside section ul.destinations li figure a img {
+  box-sizing: border-box;
+}
+#aside section ul.destinations li p {
+  margin-left: 145px;
+}
+#aside section ul.destinations li p a time {
+  display: block;
+  padding-top: 8px;
+}
+#aside section ul.twitter li {
+  clear: left;
+  margin-bottom: 20px;
+}
+#aside section ul.twitter li time {
+  display: block;
+}
+#footer {
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 5%;
+}
+#footer mark {
+  font-size: 36px;
+  letter-spacing: -1px;
+  float: left;
+  display: block;
+}
+#footer nav {
+  margin: 0 40px 0;
+  float: left;
+}
+#footer nav ul {
+  list-style: none;
+}
+#footer nav ul li {
+  display: inline-block;
+}
+#footer nav ul li a {
+  line-height: 40px;
+  display: inline-block;
+  padding: 0 5px 0 5px;
+  margin-right: 18px;
+  font-size: 12px;
+}
+#footer nav ul li a.active {
+  padding-left: 15px;
+}

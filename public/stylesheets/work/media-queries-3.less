@@ -1,0 +1,50 @@
+// General Rules
+@import "../reset";
+@import "../colors";
+
+// Mobile First Defaults
+@import	"../rules";
+@import "../base-flexible";
+
+
+// Media Queries for Breakpoints
+@import url( "../320.less"   ) only screen and ( min-width: 20em   ); // 320px  or 320/16px
+
+
+@media only screen and ( min-width: 480px   ) {
+/*
+
+  Mobile landscape (480x320)
+  
+----------------------------------------- */
+#header {
+	hgroup {
+		text-align: center;
+		h1 {
+			a {
+				color: @link-hover;
+				font-weight: 700;
+			}
+		}
+		h3 {
+			color: @link-color;
+		}
+	}
+	nav {
+		ul {
+			li {
+				a {
+					padding: 0 10px 0 10px;
+				}
+			}
+		}
+	}
+	form {
+		display: inherit;
+		margin: 8px 0 0 0;
+		input {
+			width: 100px;
+		}
+	}
+}
+}

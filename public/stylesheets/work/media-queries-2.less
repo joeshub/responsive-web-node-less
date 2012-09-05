@@ -1,0 +1,233 @@
+// General Rules
+@import "../reset";
+@import "../colors";
+
+// Mobile First Defaults
+@import	"../rules";
+@import "../base-flexible";
+
+
+@media only screen and ( min-width: 320px   ) {
+
+/*
+
+  Mobile portrait (320x480)
+    
+----------------------------------------- */
+body {
+	color: @black;
+	font-family: arial, sans-serif;
+	font-weight: normal;
+	background-color: rgb(241, 242, 243);
+}
+
+a {
+	text-decoration: none;
+	color: @link-color;
+	font-weight: 700;
+	&:hover, &:active {
+		color: @link-hover;
+	}
+}
+
+
+//Only Opera Mini Doesnt' Support @font-face
+h1, h2, h3, .logo, nav, figcaption, #footer mark, #aside button {
+	font-family: 'vigaa', arial, sans-serif;
+}
+
+
+//only Opera Mini Doesn't support border radius
+a, button, input, hgroup, #header, article, aside > section {
+	border-radius: 5px;
+}
+
+
+
+#header {
+	background-color: @light-gray;
+	box-shadow: 2px 1px 1px rgba(216, 216, 216, 1), 1px 0px 15px rgba(216, 216, 216, 1);
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	hgroup {
+		text-align: center;
+		h1 {
+			a {
+				color: @link-hover;
+				font-weight: 700;
+			}
+		}
+		h3 {
+			color: @link-color;
+		}
+	}
+	nav {
+		ul {
+			li {
+				a {
+					> span {
+						display: none;
+					}
+				}
+				&.home, &.blog {
+					display: none;
+				}
+				&.active {
+					a {
+						color: #faddde;
+						border: solid 1px #ddd;
+						background: #d81b21;
+						background: -webkit-gradient(linear, left top, left bottom, from(#aa1317), to(#ed1c24));
+					}
+				}
+				&:not(.active){
+					a {
+						color: #606060;
+						border: solid 1px #ddd;
+						background: #fff;
+						background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ededed));
+					}
+				}
+			}
+		}
+	}
+	form {
+		display: none;
+		input {
+			font-family: 'vigaa', arial, sans-serif;
+			border: 0;
+		}
+	}
+}
+
+#main {
+	#content {
+		article {
+			background-color: @white;
+			border: 1px solid @border-color;
+			header {
+				color: @link-color;
+				h2 {
+					color: @black;
+					a {
+						color: @black;
+						&:hover {
+							color: @link-hover;
+						}
+					}
+				}
+				span, a {
+				}
+			}
+			figure {
+				a {
+					img {
+					}
+					figcaption {
+						background-color: @medium-gray;
+						opacity: 0.7;
+					}
+				}
+			}
+			p {
+			}
+	
+		}
+	}
+	#aside {
+		section {
+			background-color: @white;
+			border: 1px solid @border-color;
+			button {
+				background-color: @link-hover;
+				background:-webkit-linear-gradient(bottom, @link-hover 0%, #d01408 30%, #fc180a 100%);
+				color: @light-gray;
+				cursor: pointer;
+				border: 0;
+				&:last-of-type {
+				}
+				&:hover {
+					background:-webkit-linear-gradient(bottom, #7a0700 0%, #970900 30%, #b00a00 100%);
+					color: @white;
+				}
+			}
+			h3 {
+				&:first-child {
+				}
+			}
+			&.login {
+				text-align: center;
+				p {
+					color: @link-color;
+				}
+			}
+			ul {
+				&.destinations {
+					li {
+						figure {
+							a {
+								img {
+									border: 5px solid @border-color;
+								}
+								&:hover > img {
+									border-color: @link-hover;
+								}
+							}
+						}
+						p {
+							a {
+								font-weight: 400;
+								time {
+								}
+							}
+						}
+					}
+				}
+				&.twitter {
+					li {
+						a {
+							color: @black;
+							font-weight: 400;
+							mark {
+								color: @link-hover;
+								background-color: transparent;
+							}
+						}
+						time {
+							color: @link-color;
+						}
+					}
+				}
+			}
+	
+		}
+	}
+}
+
+#footer {
+	.clearfix;
+	background-color: @black;
+	mark {
+		background-color: transparent;
+		color: @link-color;
+		font-weight: 700;
+	}
+	nav {
+		ul {
+			li {
+				a {
+					font-weight: 400;
+					text-transform: lowercase;
+					&.active {
+						background: url("/images/arrow.png") 0 50% no-repeat;
+					}
+					&:hover {
+						color: @link-hover;
+					}
+				}
+			}
+		}
+	}
+}
+
+}

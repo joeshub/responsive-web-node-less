@@ -1,0 +1,61 @@
+/* 
+
+  Variables
+
+----------------------------------------- */
+@desktop-width:   1022;
+@base-font-size:  16;
+@zeroPix:          0px;
+@minPercent:      0%;
+@maxPercent:      100%;
+@oneEm:           1em;
+
+/* 
+
+  Mixins - functions
+  
+----------------------------------------- */
+.percentWidth( @width: @desktop-width, @base: @desktop-width){
+	width:		@width / @base * 100 + @minPercent;
+}
+/* width / base = result  (100% = 1 em ~= 16px ~= 14pt) */
+
+.percentPad( @base: @desktop-width, @top: 0, @right: 0, @bottom: 0, @left: 0){
+	padding: 	(@top / @base * 100 + @minPercent) 
+				(@right / @base * 100 + @minPercent) 
+				(@bottom / @base * 100 + @minPercent) 
+				(@left / @base * 100 + @minPercent);
+}
+/* amount / base = result */
+
+.percentMargin( @base: @desktop-width, @top: 0, @right: 0, @bottom: 0, @left: 0){
+	margin: 	(@top / @base * 100 + @minPercent) 
+				(@right / @base * 100 + @minPercent) 
+				(@bottom / @base * 100 + @minPercent) 
+				(@left / @base * 100 + @minPercent);
+}
+/* amount / base = result */
+
+.emFontSize( @size: @base-font-size, @base: @base-font-size){
+	font-size:		@size / @base * @oneEm;
+}
+/* size / base = result */
+
+.emWidth( @size: 1, @base: 1){
+	width:		@size / @base * @oneEm;
+}
+/* size / base = result */
+
+.clearfix {
+	zoom: 1;
+	&:before, &:after {
+		content: "\0020";
+		display: block;
+		font-size: 0;
+		height: 0;
+		visibility: hidden;
+	}
+	&:after {
+		clear: both;
+	}
+}

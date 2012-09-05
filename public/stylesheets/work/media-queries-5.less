@@ -1,0 +1,32 @@
+// General Rules
+@import "../reset";
+@import "../colors";
+
+// Mobile First Defaults
+@import	"../rules";
+@import "../base-flexible";
+
+@import url( "../fonts.less" ) only screen and ( min-width: 20em   ); // 320px
+
+
+// Media Queries for Breakpoints
+@import url( "../320.less"   ) only screen and ( min-width: 20em   ); // 320px  or 320/16px 
+@import url( "../480.less"   ) only screen and ( min-width: 30em   ); // 480px
+@import url( "../600.less"   ) only screen and ( min-width: 37.5em ); // 600px
+
+
+@media only screen and ( min-width: 768px   ) {
+/*
+
+  Tablet portrait (768x1024)
+  
+----------------------------------------- */
+
+#header {
+	form {
+		input {
+			width: 200px;
+		}
+	}
+}
+}

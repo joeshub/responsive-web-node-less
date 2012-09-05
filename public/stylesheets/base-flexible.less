@@ -1,0 +1,255 @@
+/*
+
+  Flexible Grid
+  Default Styles Mobile First
+
+----------------------------------------- */
+
+body {
+	font-size: 100%; //sets font size to 16px on most browsers
+	-webkit-text-size-adjust:100%; // try to get webkit to reset the font size on orientation changes.
+	&.mediumText {
+		font-size:110%;
+	}
+	&.largeText {
+		font-size: 125%;
+	}
+}
+
+#content {
+	width: 92%;
+	margin: 0px auto 15px;
+}
+
+#aside {
+	width: 92%;
+	margin: 0px auto 25px;
+}
+
+#footer {
+	width: @maxPercent;
+}
+
+
+#header {
+	height: 50px;
+	margin: 0 auto 15px;
+	overflow: hidden;
+	padding: 0 4% 0 3%;
+	hgroup {
+		position: relative;
+		float: left;
+		width: 85px;
+		height: 50px;
+		h1 {
+			.percentPad( 100, 8, 0, 0, 0); //padding: 30px 0 0; base = 140
+			.emFontSize(34); //font-size: 48px; base = 16
+			letter-spacing:-1px;
+			text-shadow: 1px 0px 3px rgba(0,0,0,0.24);
+			a {
+				
+			}
+		}
+		h3 {
+			display: none;
+		}
+	}
+	#top {
+		overflow: hidden;
+		max-height: 70px;
+	}
+	nav {
+		margin: 7px 0 0 7px;
+		float: left;
+		ul {
+			list-style:	none;
+			li {
+				display: inline-block;
+				a {
+					line-height: 35px;
+					display: inline-block;
+					padding: 0 6px 0 6px;
+					margin: 0 2px;
+					.emFontSize(15); //font-size: 18px;
+					font-weight: 400;
+					text-transform: lowercase;
+				}
+			}
+		}
+	}
+	form {
+		float: right;
+		input {
+			.percentWidth(270, 300); //width: 270px;
+			height: 35px;
+			line-height: 35px;
+			padding: 0 0 0 15px;
+			.emFontSize(16); //font-size: 18px;
+			font-weight: 400;
+		}
+	}
+}
+
+#main {
+	margin: 0 auto;
+	.clearfix;
+	#content {
+		article {
+			margin-bottom: 15px;
+			header {
+				.percentPad( 622, 30, 20, 20, 20); //padding: 30px 20px 20px; base = 622
+				h2 {
+					.emFontSize(24); //font-size: 24px;
+					margin-bottom: 12px;
+					a {
+						.emFontSize(24, 24); //font-size: 24px;
+						font-weight: 400;
+					}
+				}
+				span, a {
+					.emFontSize(14); //font-size: 14px;
+					.percentPad( 622, 0, 30, 0, 0); //padding-right: 30px; base = 622
+				}
+			}
+			figure {
+				a {
+					position: relative;
+					display: block;
+					img {
+						display: block;
+						margin: 0 auto;
+					}
+					figcaption {
+						position: absolute; 
+						bottom:0;
+						left: 8%;
+						height: 14px;
+						padding: 1.5%;
+						color: @black;
+						font-weight: 400;
+						.emFontSize(12); //font-size: 14px;
+					}
+				}
+			}
+			p {
+				.percentPad( 622, 20, 20, 20, 20); //padding: 20px; base = 622
+				.emFontSize(14); //font-size: 14px;
+				line-height: 21px;
+			}
+	
+		}
+	}
+	#aside {
+		.emFontSize(14); //font-size: 12px;
+		line-height: 18px;
+		section {
+			margin-bottom: 15px;
+			.percentPad( 350, 30, 20, 30, 20); //padding: 30px 20px; base = 350
+			button {
+				.percentWidth(146, 308); //width: 146px;
+				max-width: 135px;
+				height: 40px;
+				margin-right: 1.7%;
+				.emFontSize(14, 14); //font-size: 14px; base 12
+				&:last-of-type {
+					margin-right: 0;
+				}
+				&:hover {
+				}
+			}
+			h3 {
+				margin: 30px 0 16px;
+				.emFontSize(18, 14); //font-size: 18px; base 12
+				&:first-child {
+					margin-top: 0;
+				}
+			}
+			&.login {
+				p {
+				}
+			}
+			ul {
+				&.destinations {
+					overflow: hidden;
+					li {
+						clear: left;
+						margin-bottom:30px;
+						&:last-child {
+							margin-bottom: 0;
+						}
+						figure {
+							float: left;
+							a {
+								img {
+									box-sizing: border-box;
+								}
+								&:hover > img {
+								}
+							}
+						}
+						p {
+							margin-left: 150px;
+							.emFontSize(11, 14);
+							a {
+								time {
+									display: block;
+									padding-top: 8px;
+								}
+							}
+						}
+					}
+				}
+				&.twitter {
+					li {
+						clear: left;
+						margin-bottom:20px;
+						a {
+							mark {
+							}
+						}
+						time {
+							display: block;
+						}
+					}
+				}
+			}
+	
+		}
+	}
+}
+
+
+#footer {
+	.clearfix;
+	box-sizing: border-box;
+	padding: 5% 3%;
+	mark {
+		.emFontSize(15); //font-size: 36px;
+		letter-spacing: -1px;
+		line-height: 40px;
+		float: left;
+		display: none;
+	}
+	nav {
+		margin: 0 auto;
+		ul {
+			text-align: center;
+			list-style:	none;
+			li {
+				display: inline-block;
+				a {
+					line-height: 40px;
+					display: inline-block;
+					padding: 0 1px 0 1px;
+					margin-right: 2px;
+					.emFontSize(12); //font-size: 12px;
+					&.active {
+						padding-left: 15px;
+					}
+					&:hover {
+					}
+				}
+			}
+		}
+	}
+}
