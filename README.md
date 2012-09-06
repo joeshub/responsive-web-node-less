@@ -25,7 +25,7 @@ http://www.slideshare.net/sspdf/responsive-websites
 
 ## LESS
 
-The examples use LESS to help with a few of the features, including dynamically calculating percentage based and em based sizes. The actual formulate is from the book by Ethan Marcotte.
+The examples use LESS to help with a few of the features, including dynamically calculating percentage based and em based sizes. The actual formula is from the book by Ethan Marcotte.
 
 ## Notes
 
