@@ -1,5 +1,7 @@
 # Responsive Website using Node.js and LESS
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/joeshub/responsive-web-node-less.svg)](https://greenkeeper.io/)
+
 ## Usage
 
 From the root folder start the app: > node app.js
